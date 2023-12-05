@@ -1,0 +1,98 @@
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+	text-decoration: none;
+	list-style:none;
+}
+.tabs{
+    display: flex;
+    gap: 5px;
+    background: #eee;
+}
+
+.tabs .img{
+    width: 40%;	
+}
+.tabs .img img{
+    width: 100%;
+    height: 500px;		
+}
+
+.tabs .boxTabs{
+    width: 60%;
+    background: aliceblue;	
+}
+.tabs .boxTabs .tabsLink{
+	
+}
+.tabs .boxTabs .tabsLink ul{
+    display: flex;
+    background: #d44848;
+    height: 30px;
+  
+}
+.tabs .boxTabs .tabsLink li{
+	height: 100%;
+    width: calc(100% /3);
+    text-align: center;
+    background: green;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}.tabs .boxTabs .tabsLink .active{
+    background: #fff;
+	color:#000;
+}
+.tabs .boxTabs .text{
+	background: #fff;
+    height: calc(100% - 30px);
+    overflow: hidden;
+    padding: 5px 10px;
+}
+.tabs .boxTabs .text p{
+    text-align: justify;
+    word-break: break-word;
+    line-height: 1.6;
+    display: none;
+}
+.tabs .boxTabs .text #textOne{
+    display: block;
+}
+@media(max-width:600px){
+	.tabs{
+		    flex-direction: column;
+	}
+	.tabs .img{
+     width: 100%;
+}
+  .tabs .img img{
+	height: 400px;	
+}
+
+  .tabs .boxTabs{
+	    width: 100%;
+}
+.tabs .boxTabs .text {
+    min-height: 200px;
+}
+
+}
+
+
+
+
+
+
+
+
+	
+	
